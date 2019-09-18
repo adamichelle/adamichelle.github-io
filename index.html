@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aniuchi Adaobi || Front End Dev.</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -12,41 +14,47 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html">Aniuchi A. M.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container-fluid p-3">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/">
+                    <img src="https://res.cloudinary.com/missada/image/upload/v1568721713/my_portfolio/AMA_Page_Logo.png" width="70" height="70" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars my-navbar-toggler-icon"></i>
+                    </span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#connectwithme">Connect With Me</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="home" class="page-intro text-white p-5">
+
+    <main class="content">
+        <section class="hero mb-5">
+            <div class="py-2 d-flex justify-content-center">
+                <img src="https://res.cloudinary.com/missada/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1568736976/my_portfolio/hero_image.png" class="hero-image show-on-scroll" alt="Aniuchi Adaobi">
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <h1>Hello☻! I'm <b>Adaobi</b>.</h1>
-                        <p>
-                            Front End dev || Writer || Blogger.
-                            <br>
-                            I like to code, JavaScript is my tool and the web is my playground.
-                        </p>
+                    <div class="col-sm-12 text-center hero-text show-on-scroll">
+                        <h1>Hello <span class="smiley">😃</span>! My name is <span class="highlight underline">Adaobi</span>.</h1>
+                        <p> Front End dev <span class="double-line-span">||</span> Writer <span class="double-line-span">||</span> Blogger.<br> I like to code, JavaScript is my tool and the web is my playground.</p>
                         <ul class="language-pills">
                             <li>HTML</li>
                             <li>CSS</li>
@@ -58,17 +66,104 @@
                 </div>
             </div>
         </section>
-
-
-        <section id="about" class="about p-5">
+        <section class="container portfolio mb-5" id="#portfolio">
+            <h2 class="heading show-on-scroll">Portfolio <i class="fas fa-code highlight"></i></h2>
+            <hr>
+            <p>I like to work on personal projects I find interesting. <br> Here is a list of recent Personal Projects I have worked on:</p>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mb-4">
+                        <img data-src="https://res.cloudinary.com/missada/image/upload/v1558459114/my_portfolio/restaurant_reviews_app.png" class="card-img-top lazy" alt="Restaurarant Reviews App">
+                        <div class="card-body show-on-scroll portfolio-item-details">
+                            <h5 class="card-title text-center">Restaurarant Reviews App</h5>
+                            <p class="card-text stack-list text-center">HTML <span class="double-line-span">||</span> CSS <span class="double-line-span">||</span> JavaScript</p>
+                            <p class="card-text description">A PWA of restaurant reviews with a backend hosted on heroku that allows for addition of reviews and viewing of the site offline.</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-pink mr-1" href="https://adamichelle.github.io/mws-restaurant-stage-1/">View Demo</a>
+                                <a class="btn btn-outline-pink ml-1" href="https://github.com/adamichelle/mws-restaurant-stage-1">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mb-4">
+                        <img data-src="https://res.cloudinary.com/missada/image/upload/v1558459112/my_portfolio/javascript_currency_converter_pwa.png" class="card-img-top lazy" alt="Restaurarant Reviews App">
+                        <div class="card-body show-on-scroll portfolio-item-details">
+                            <h5 class="card-title text-center">Currency Converter</h5>
+                            <p class="card-text stack-list text-center">HTML <span class="double-line-span">||</span> CSS <span class="double-line-span">||</span> JavaScript <span class="double-line-span">||</span> Bootstrap <span class="double-line-span">||</span> JQuery</p>
+                            <p class="card-text description">A PWA that gets rates from The Free Currency Converter API and allows you do currency conversions offline</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-pink mr-1" href="https://adamichelle.github.io/my-currency-converter/">View Demo</a>
+                                <a class="btn btn-outline-pink ml-1" href="https://github.com/adamichelle/my-currency-converter/">Github Repo</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mb-4">
+                        <img data-src="https://res.cloudinary.com/missada/image/upload/v1558459115/my_portfolio/got_quote_generator_pic.png" class="card-img-top lazy" alt="GOT Quote Generator">
+                        <div class="card-body show-on-scroll portfolio-item-details">
+                            <h5 class="card-title text-center">GOT Quote Generator</h5>
+                            <p class="card-text stack-list text-center">HTML <span class="double-line-span">||</span> CSS <span class="double-line-span">||</span> JavaScript <span class="double-line-span">||</span> Bootstrap <span class="double-line-span">||</span> JQuery</p>
+                            <p class="card-text description">Generates a quote from characters in the series Game of Thrones randomly and allows you tweet the quote</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-pink mr-1" href="https://adamichelle.github.io/got-quote-generator/">View Demo</a>
+                                <a class="btn btn-outline-pink ml-1" href="https://github.com/adamichelle/got-quote-generator/">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mb-4">
+                        <img data-src="https://res.cloudinary.com/missada/image/upload/v1558540443/my_portfolio/picture_articles_finder.png" class="card-img-top lazy" alt="Photo Articles Finder">
+                        <div class="card-body show-on-scroll portfolio-item-details">
+                            <h5 class="card-title text-center">Photo Articles Finder</h5>
+                            <p class="card-text stack-list text-center">HTML <span class="double-line-span">||</span> CSS <span class="double-line-span">||</span> JavaScript <span class="double-line-span">||</span> React</p>
+                            <p class="card-text description">An app that retrives a list of 10 articles from NyTimes and a picture from Unsplash for a search term</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-pink mr-1" href="https://photo-articles-finder.herokuapp.com/">View Demo</a>
+                                <a class="btn btn-outline-pink ml-1" href="https://github.com/adamichelle/photo-article-finder">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mb-4">
+                        <img data-src="https://res.cloudinary.com/missada/image/upload/v1568730557/my_portfolio/Meteorite_Landings_Explorer.png" class="card-img-top lazy" alt="Meteorite Explorer">
+                        <div class="card-body show-on-scroll portfolio-item-details">
+                            <h5 class="card-title text-center">Meteorite Landings Explorer</h5>
+                            <p class="card-text stack-list text-center">HTML <span class="double-line-span">||</span> CSS <span class="double-line-span">||</span> JavaScript <span class="double-line-span">||</span> React</p>
+                            <p class="card-text description">Displays of meteorite landings gotten from the meteorite landings dataset in the NASA API.</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-pink mr-1" href="https://meteorite-landings-explorer.netlify.com">View Demo</a>
+                                <a class="btn btn-outline-pink ml-1" href="https://github.com/adamichelle/meteorite-landings-explorer">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mb-4">
+                        <img data-src="https://res.cloudinary.com/missada/image/upload/v1568729912/my_portfolio/Memory_Matching_Game.png" class="card-img-top lazy" alt="Photo Articles Finder">
+                        <div class="card-body show-on-scroll portfolio-item-details">
+                            <h5 class="card-title text-center">Memory Matching Game</h5>
+                            <p class="card-text stack-list text-center">HTML || CSS || JavaScript</p>
+                            <p class="card-text description">A memory matching game</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-pink mr-1" href="https://adamichelle.github.io/memory-matching-game/">View Demo</a>
+                                <a class="btn btn-outline-pink ml-1" href="https://github.com/adamichelle/memory-matching-game/">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about mb-5 " id="aboutMe">
             <div class="container">
+                <h2 class="heading show-on-scroll">About Me <i class="far fa-address-card highlight"></i></h2>
+                <hr>
+                <br>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2>About Me</h2>
-                        <hr>
-                        <p>
-                            I'm a front end developer based in <b>Lagos,</b> Nigeria.
-                            <br>
+                        <p>I'm a front end developer based in <b>Lagos,</b> Nigeria. <br>
                             I started web application development in 2016 during my internship at a software development
                             firm. At the time, PHP and MySQl were my tools of development.
                             More recently, I discovered my love for JavaScript as I took and finished courses in Udacity 
@@ -83,228 +178,61 @@
                             end JavaScript skills.
                         </p>
                         <p>
-                            I am passionate about building web apps to provide solutions to business and people who
-                            need them. You can check out some of my projects below.
+                            I also write about my projects when I can. I have listed some of them below in the next section
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-
-
-        <section id="projects" class="projects p-5" style="min-height: 350px;">
+        <section class="articles mb-5" id="articles">
             <div class="container">
+                <h2 class="heading show-on-scroll">Articles <i class="fas fa-edit highlight"></i></h2>
+                <hr>
+                <br>
                 <div class="row">
-                    <div class="col-sm-12 projects-intro">
-                        <h2>Projects</h2>
-                        <hr>
-                        <p>In my free time, I like to work on personal projects I find interesting.
-                            <br>
-                            In this section, I present some of the projects I personally liked working on.
-                        </p>
-                        <p>Below is a display of some of my projects and pens on code pen.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <blockquote class="embedly-card"><h4><a href="https://medium.com/@adamichelllle/building-a-memory-matching-game-in-javascript-48e792c7b563">Building a Memory Matching Game in JavaScript</a></h4><p>I recently stumbled across Sandra Israel's article on how she built a memory matching game for her FEND project(found here ) and it looked like it was fun to make so I decided to follow through and replicate something like it. I However, there was a twist to mine.</p></blockquote>
                     </div>
-                </div>
-
-                <br><br>
-
-                <div id="projectsDisplayCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4 active">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558459114/my_portfolio/restaurant_reviews_app.png" alt="restaurant reviews app">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>An PWA of restaurant reviews with a backend hosted on heroku that allows for addition of reviews and viewing of the site offline.</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Restaurant Reviews</h3>
-                                    <p class="card-text text-center">HTML || CSS || JavaScript</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://adamichelle.github.io/mws-restaurant-stage-1/">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://github.com/adamichelle/mws-restaurant-stage-1">Github Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558459112/my_portfolio/javascript_currency_converter_pwa.png" alt="Offline currency converter">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>A PWA that gets rates from The Free Currency Converter API and allows you do currency conversions offline.</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Currency Converter</h3>
-                                    <p class="card-text text-center">HTML || CSS || Bootstrap || JavaScript || JQuery</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://adamichelle.github.io/my-currency-converter/">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://github.com/adamichelle/my-currency-converter/">Github Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558459115/my_portfolio/got_quote_generator_pic.png" alt="GOT quote generator">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>Generates a GOT quote randomly and allows you tweet the quote</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">GOT Quote Generator</h3>
-                                    <p class="card-text text-center">HTML || CSS || Bootstrap || JavaScript || JQuery</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://adamichelle.github.io/got-quote-generator/">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://github.com/adamichelle/got-quote-generator/">Github Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558459112/my_portfolio/connect_4_game.png" alt="Connect 4 Game App">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>A web based connect 4 game between two players</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Connect 4 Game</h3>
-                                    <p class="card-text text-center">HTML || CSS || Bootstrap || JavaScript || JQuery</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://adamichelle.github.io/connect4-web-game/">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://github.com/adamichelle/connect4-web-game/">Github Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558540443/my_portfolio/picture_articles_finder.png" alt="photo article finder">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>An app that retrives articles from NyTimes and a picture from Unsplash for a word entered</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Photo and Articles Finder</h3>
-                                    <p class="card-text text-center">HTML || CSS || JavaScript || React</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://photo-articles-finder.herokuapp.com/">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://github.com/adamichelle/photo-article-finder">Github Repo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558540443/my_portfolio/binary_to_decimal_coverter.png" alt="Binary to Decimal Converter">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>A pen with a function for converting from binary to decimal</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Binary to Decimal Converter</h3>
-                                    <p class="card-text text-center">HTML || CSS || JavaScript || Bootstrap</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://codepen.io/adamichelle/full/qGZYBr">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://codepen.io/adamichelle/pen/qGZYBr">View Pen</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558540753/my_portfolio/js_bootstrap_weight_converter.png" alt="Weight Converter">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>A pen with a function to convert from pounds to kilograms, grams and ounces</p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Weight Converter</h3>
-                                    <p class="card-text text-center">HTML || CSS || JavaScript || Bootstrap</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://codepen.io/adamichelle/full/oRxVJB">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://codepen.io/adamichelle/pen/oRxVJB">View Pen</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <figure>
-                                    <img class="card-img-top" src="https://res.cloudinary.com/missada/image/upload/v1558543032/my_portfolio/carousel_with_3_card_items.png" alt="3 Card Carousel">
-                                    <figcaption class="project-description-overlay p-3 text-center">
-                                        <p>A pen of a carousel with 3 card items and hover effect. I modified the code gotten from <a href="https://azmind.com/bootstrap-carousel-multiple-items/">here</a></p>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">Bootsrap 3 Card Items Carousel</h3>
-                                    <p class="card-text text-center">HTML || CSS || JQuery || Bootstrap</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a class="btn btn-secondary mr-1" href="https://codepen.io/adamichelle/full/WBXObZ">View Demo</a>
-                                        <a class="btn btn-secondary ml-1" href="https://codepen.io/adamichelle/pen/WBXObZ">View Pen</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <blockquote class="embedly-card"><h4><a href="https://medium.com/@adamichelllle/5-awesome-code-editor-tips-and-tricks-ive-found-on-twitter-that-you-might-like-and-find-useful-7e601134c284">5 Awesome Code Editor Tips And Tricks I've Found On Twitter That You Might Like And Find Useful.</a></h4><p>The coding and developer community on Twitter has proven to be a rich bank of resources on coding tips, tricks and tutorials. In this article, I'll be sharing a list of 5 of such code editor tips that could prove to be useful especially to rookie developers.</p></blockquote>
                     </div>
-
-                    <a class="carousel-control-prev" href="#projectsDisplayCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#projectsDisplayCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </section>
-
-
-        <section id="connectWithMe" class="connect-with-me p-5">
+        <section class="contact mb-5" id="contactMe">
             <div class="container">
+                <h2 class="heading show-on-scroll">Connect With Me <i class="fas fa-at highlight"></i></h2>
+                <hr>
+                <br>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2>Connect With Me</h2>
-                        <hr>
                         <p>
                             I'm interested in meeting new people and sharing ideas, books and favorite music with them.
                             <br>
                             You can check me out, link up with me or chat me up on any of my social links listed below.
                         </p>
                         <div class="d-flex">
-                            <a class="btn btn-light mr-2" href="https://twitter.com/aniuchia"><span class="sr-only">Twitter</span><i class="fab fa-twitter fa-2x"></i></a>
-                            <a class="btn btn-light mr-2" href="https://www.linkedin.com/in/adaobi-aniuchi/"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin-in fa-2x"></i></a>
-                            <a class="btn btn-light mr-2" href="https://codepen.io/adamichelle/"><span class="sr-only">Codepen</span><i class="fab fa-codepen fa-2x"></i></a>
-                            <a class="btn btn-light mr-2" href="https://github.com/adamichelle/"><span class="sr-only">Github</span><i class="fab fa-github fa-2x"></i></a>
-                            <a class="btn btn-light" href="https://medium.com/@adamichelllle"><span class="sr-only">Medium</span><i class="fab fa-medium-m fa-2x"></i></a>
+                            <a class="btn btn-outline-pink mr-2" href="https://www.linkedin.com/in/adaobi-aniuchi/"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin-in fa-2x"></i></a>
+                            <a class="btn btn-outline-pink mr-2" href="https://twitter.com/aniuchia"><span class="sr-only">Twitter</span><i class="fab fa-twitter fa-2x"></i></a>
+                            <a class="btn btn-outline-pink mr-2" href="https://codepen.io/adamichelle/"><span class="sr-only">Codepen</span><i class="fab fa-codepen fa-2x"></i></a>
+                            <a class="btn btn-outline-pink mr-2" href="https://github.com/adamichelle/"><span class="sr-only">Github</span><i class="fab fa-github fa-2x"></i></a>
+                            <a class="btn btn-outline-pink" href="https://medium.com/@adamichelllle"><span class="sr-only">Medium</span><i class="fab fa-medium-m fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-fluid p-3 text-center text-white">
-        <p class="mb-0">Copyright &copy; Aniuchi Adaobi 2019</p>
+
+    <footer class="pt-3 pb-1">
+        <p class="text-center">Copyright © Aniuchi Adaobi 2019</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
