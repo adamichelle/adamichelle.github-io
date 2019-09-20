@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://drv.tw/~deladycoda@gmail.com/gd/medium-posts-widget/static/css/widget.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="styles.css" type="text/css" rel="stylesheet">
@@ -33,11 +34,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Me
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#aboutMe">Who is Adaobi?</a>
+                                <a class="dropdown-item" href="#articles">My articles</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Me</a>
+                            <a class="nav-link" href="#contactMe">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -189,14 +196,8 @@
                 <h2 class="heading show-on-scroll">Articles <i class="fas fa-edit highlight"></i></h2>
                 <hr>
                 <br>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <blockquote class="embedly-card"><h4><a href="https://medium.com/@adamichelllle/building-a-memory-matching-game-in-javascript-48e792c7b563">Building a Memory Matching Game in JavaScript</a></h4><p>I recently stumbled across Sandra Israel's article on how she built a memory matching game for her FEND project(found here ) and it looked like it was fun to make so I decided to follow through and replicate something like it. I However, there was a twist to mine.</p></blockquote>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <blockquote class="embedly-card"><h4><a href="https://medium.com/@adamichelllle/5-awesome-code-editor-tips-and-tricks-ive-found-on-twitter-that-you-might-like-and-find-useful-7e601134c284">5 Awesome Code Editor Tips And Tricks I've Found On Twitter That You Might Like And Find Useful.</a></h4><p>The coding and developer community on Twitter has proven to be a rich bank of resources on coding tips, tricks and tutorials. In this article, I'll be sharing a list of 5 of such code editor tips that could prove to be useful especially to rookie developers.</p></blockquote>
-                    </div>
-                </div>
+                <p>Here are some articles I have written about my recent projects.</p>
+                <div id="medium-posts-widget" data-medium-rss="https://medium.com/feed/@adamichelllle"></div>
             </div>
         </section>
         <section class="contact mb-5" id="contactMe">
@@ -230,9 +231,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script src="https://drv.tw/~deladycoda@gmail.com/gd/medium-posts-widget/static/js/widget.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
